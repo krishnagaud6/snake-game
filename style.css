@@ -1,0 +1,83 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    height:100vh;
+    font-family:'Segoe UI', sans-serif;
+    color:#eaeaf0;
+
+    /* softer animated background */
+    background: linear-gradient(135deg,#1f2330,#2b3142,#1f2330);
+}
+
+
+
+/* Score panels */
+#scoreBox, #highScoreBox{
+    font-size:16px;
+    padding:10px 20px;
+    margin:8px;
+    border-radius:12px;
+
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(8px);
+
+    box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+}
+
+
+
+/* Board */
+#board{
+    width:520px;
+    height:520px;
+    display:grid;
+    grid-template-rows: repeat(18,1fr);
+    grid-template-columns: repeat(18,1fr);
+
+    border-radius:16px;
+    overflow:hidden;
+
+    /* muted gradient instead of bright neon */
+    background: linear-gradient(135deg,#cfd8dc,#e6e9ed);
+
+    box-shadow:
+        0 12px 30px rgba(0,0,0,0.5),
+        inset 0 0 18px rgba(0,0,0,0.2);
+}
+
+
+
+/* Snake head */
+.head{
+    background: linear-gradient(145deg,#4db6ac,#2f8f83);
+    border-radius:6px;
+
+    box-shadow: 0 0 8px rgba(77,182,172,0.5);
+}
+
+
+
+/* Snake body */
+.snake{
+    background: linear-gradient(145deg,#6dd5c5,#4db6ac);
+    border-radius:4px;
+}
+
+
+
+/* Food */
+.food{
+    background: radial-gradient(circle,#ff8a80,#d9534f);
+    border-radius:50%;
+
+    box-shadow: 0 0 10px rgba(255,138,128,0.6);
+}
+0
